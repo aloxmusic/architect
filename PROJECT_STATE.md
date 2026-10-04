@@ -6,7 +6,14 @@ Local Windows checks passed. User-reported cloud run on Debian 13 / Python 3.12.
 passed pytest (238 passed, 2 skipped), Ruff, wheel build and HTTP smoke. Mypy
 reported Windows-only msvcrt attributes in the lock integration test. Added an
 explicit sys.platform guard so Linux type checking excludes that Windows code.
-Cloud verification of this correction is pending; the environment is unpublished.
+User-reported published cloud task verified the correction: mypy, pytest and HTTP
+smoke passed at commit 7a30f59 on Debian 13 / Python 3.12.14. The personal ZIP
+transfer and real brief/instruction chain passed; exported evidence was locally
+verified by SHA-256 and manifest on 2026-10-05.
+Linux scheduled source checks now use GitHub Actions: hourly quick at minute 17,
+daily full at 03:37 Europe/Istanbul (00:37 UTC), with manual full/quick selection.
+Reports and logs are retained for 30 days, including test failures. First remote
+execution is pending. These checks do not repeat connector or private ZIP tests.
 No project persistence, image provider invocation or public production deployment.
 Personal local operational logs, continuation receipts and machine paths excluded.
 
