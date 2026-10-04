@@ -42,6 +42,9 @@ def test_bad_package_reports_failure_without_false_success(tmp_path: Path) -> No
 
 @pytest.mark.skipif(os.name != "nt", reason="Windows OS lock integration")
 def test_concurrent_run_skips_and_lock_releases(tmp_path: Path) -> None:
+    if sys.platform != "win32":
+        pytest.skip("Windows OS lock integration")
+
     import msvcrt
 
     with (tmp_path / "runner.lock").open("w+b") as lock:
