@@ -1,0 +1,494 @@
+{
+  "id": "14e37534-f966-5ac0-a548-bed0d0ebf5cb",
+  "name": {
+    "value": "L Layout Kitchen",
+    "source": "USER_EXPLICIT"
+  },
+  "project_type": {
+    "value": "residential",
+    "source": "USER_EXPLICIT"
+  },
+  "units": "mm",
+  "locale": {
+    "value": "en-GB",
+    "source": "USER_EXPLICIT"
+  },
+  "status": {
+    "value": "draft",
+    "source": "USER_EXPLICIT"
+  },
+  "schema_version": "1.0.0",
+  "spaces": [
+    {
+      "id": "b4ece058-aaa1-5e14-a365-988f5d170c9f",
+      "space_type": {
+        "value": "kitchen",
+        "source": "USER_EXPLICIT"
+      },
+      "dimensions": {
+        "value": {
+          "width": "3270",
+          "depth": "2580",
+          "height": "2800"
+        },
+        "source": "USER_EXPLICIT"
+      },
+      "floor_elevation": {
+        "value": "0",
+        "source": "USER_EXPLICIT"
+      },
+      "ceiling_height": {
+        "value": "2800",
+        "source": "USER_EXPLICIT"
+      },
+      "boundary": {
+        "value": {
+          "vertices": [
+            {
+              "x": "0",
+              "y": "0"
+            },
+            {
+              "x": "3270",
+              "y": "0"
+            },
+            {
+              "x": "3270",
+              "y": "2580"
+            },
+            {
+              "x": "0",
+              "y": "2580"
+            }
+          ]
+        },
+        "source": "USER_EXPLICIT"
+      }
+    }
+  ],
+  "walls": [
+    {
+      "id": "939dc3de-96f0-57ef-b738-3946f812fba3",
+      "start": {
+        "value": {
+          "x": "0",
+          "y": "0",
+          "z": "0"
+        },
+        "source": "USER_EXPLICIT"
+      },
+      "end": {
+        "value": {
+          "x": "3270",
+          "y": "0",
+          "z": "0"
+        },
+        "source": "USER_EXPLICIT"
+      },
+      "thickness": {
+        "value": "150",
+        "source": "USER_EXPLICIT"
+      },
+      "height": {
+        "value": "2800",
+        "source": "USER_EXPLICIT"
+      },
+      "wall_type": {
+        "value": "partition",
+        "source": "USER_EXPLICIT"
+      }
+    },
+    {
+      "id": "880ee7ae-d957-531a-bc72-c09ab83cc281",
+      "start": {
+        "value": {
+          "x": "3270",
+          "y": "0",
+          "z": "0"
+        },
+        "source": "USER_EXPLICIT"
+      },
+      "end": {
+        "value": {
+          "x": "3270",
+          "y": "2580",
+          "z": "0"
+        },
+        "source": "USER_EXPLICIT"
+      },
+      "thickness": {
+        "value": "150",
+        "source": "USER_EXPLICIT"
+      },
+      "height": {
+        "value": "2800",
+        "source": "USER_EXPLICIT"
+      },
+      "wall_type": {
+        "value": "partition",
+        "source": "USER_EXPLICIT"
+      }
+    },
+    {
+      "id": "aa396b42-e0e5-5c7a-becc-341616a6aadb",
+      "start": {
+        "value": {
+          "x": "3270",
+          "y": "2580",
+          "z": "0"
+        },
+        "source": "USER_EXPLICIT"
+      },
+      "end": {
+        "value": {
+          "x": "0",
+          "y": "2580",
+          "z": "0"
+        },
+        "source": "USER_EXPLICIT"
+      },
+      "thickness": {
+        "value": "150",
+        "source": "USER_EXPLICIT"
+      },
+      "height": {
+        "value": "2800",
+        "source": "USER_EXPLICIT"
+      },
+      "wall_type": {
+        "value": "partition",
+        "source": "USER_EXPLICIT"
+      }
+    },
+    {
+      "id": "9daaa49a-ece1-58f6-844e-d2d5947a2c79",
+      "start": {
+        "value": {
+          "x": "0",
+          "y": "2580",
+          "z": "0"
+        },
+        "source": "USER_EXPLICIT"
+      },
+      "end": {
+        "value": {
+          "x": "0",
+          "y": "0",
+          "z": "0"
+        },
+        "source": "USER_EXPLICIT"
+      },
+      "thickness": {
+        "value": "150",
+        "source": "USER_EXPLICIT"
+      },
+      "height": {
+        "value": "2800",
+        "source": "USER_EXPLICIT"
+      },
+      "wall_type": {
+        "value": "partition",
+        "source": "USER_EXPLICIT"
+      }
+    }
+  ],
+  "furniture": [
+    {
+      "id": "29437bae-68e8-5eb3-a95f-3f45cce175f8",
+      "object_type": {
+        "value": "cabinetry",
+        "source": "USER_EXPLICIT"
+      },
+      "dimensions": {
+        "value": {
+          "width": "600",
+          "depth": "600",
+          "height": "900"
+        },
+        "source": "USER_EXPLICIT"
+      },
+      "position": {
+        "value": {
+          "x": "300",
+          "y": "300",
+          "z": "0"
+        },
+        "source": "USER_EXPLICIT"
+      },
+      "rotation": {
+        "value": "0",
+        "source": "USER_EXPLICIT"
+      },
+      "clearance_requirements": {
+        "value": {
+          "front": "900",
+          "back": "0",
+          "left": "0",
+          "right": "0",
+          "above": "0"
+        },
+        "source": "USER_EXPLICIT"
+      },
+      "fixed_or_movable": {
+        "value": "movable",
+        "source": "USER_EXPLICIT"
+      },
+      "host_wall_id": {
+        "value": "939dc3de-96f0-57ef-b738-3946f812fba3",
+        "source": "USER_EXPLICIT"
+      }
+    }
+  ],
+  "fixed_elements": [
+    {
+      "id": "288ff7fd-b07d-5f25-89b3-57d2ccc637c1",
+      "element_type": {
+        "value": "structural_column",
+        "source": "USER_EXPLICIT"
+      },
+      "dimensions": {
+        "value": {
+          "width": "200",
+          "depth": "200",
+          "height": "2800"
+        },
+        "source": "USER_EXPLICIT"
+      },
+      "position": {
+        "value": {
+          "x": "3070",
+          "y": "2380",
+          "z": "0"
+        },
+        "source": "USER_EXPLICIT"
+      },
+      "rotation": {
+        "value": "0",
+        "source": "USER_EXPLICIT"
+      }
+    }
+  ],
+  "styles": [
+    {
+      "id": "f52adcbd-4600-5d47-8a64-c10b60cd4814",
+      "primary_style": {
+        "value": "minimal",
+        "source": "AI_INFERRED"
+      },
+      "secondary_influences": {
+        "value": [],
+        "source": "USER_EXPLICIT"
+      },
+      "palette": {
+        "value": [
+          "warm white"
+        ],
+        "source": "USER_EXPLICIT"
+      },
+      "material_characteristics": {
+        "value": [
+          "matte"
+        ],
+        "source": "USER_EXPLICIT"
+      },
+      "mood": {
+        "value": "calm",
+        "source": "USER_EXPLICIT"
+      },
+      "design_intensity": {
+        "value": "0.5",
+        "source": "USER_EXPLICIT"
+      },
+      "prohibited_characteristics": {
+        "value": [
+          "glossy"
+        ],
+        "source": "USER_EXPLICIT"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "id": "6ae4bb45-524c-5888-8811-cc1d1257d559",
+      "generic_material": {
+        "value": "oak",
+        "source": "USER_EXPLICIT"
+      },
+      "verification_status": {
+        "value": "unverified",
+        "source": "USER_EXPLICIT"
+      }
+    }
+  ],
+  "lighting": [
+    {
+      "id": "c8de6470-8453-5a2b-807f-dab988db132c",
+      "fixture_intent": {
+        "value": "indirect",
+        "source": "USER_EXPLICIT"
+      },
+      "color_temperature": {
+        "value": "3000",
+        "source": "USER_EXPLICIT"
+      },
+      "daylight_intent": {
+        "value": "preserve window daylight",
+        "source": "USER_EXPLICIT"
+      },
+      "artificial_lighting_intent": {
+        "value": "task and ambient",
+        "source": "USER_EXPLICIT"
+      },
+      "lighting_mood": {
+        "value": "warm",
+        "source": "USER_EXPLICIT"
+      }
+    }
+  ],
+  "cameras": [
+    {
+      "id": "7a99ed7e-77a7-5629-bdff-8ef4e1446ab4",
+      "position": {
+        "value": {
+          "x": "1635",
+          "y": "2480",
+          "z": "1600"
+        },
+        "source": "USER_EXPLICIT"
+      },
+      "target": {
+        "value": {
+          "x": "0",
+          "y": "0",
+          "z": "1000"
+        },
+        "source": "USER_EXPLICIT"
+      },
+      "focal_length": {
+        "value": "35",
+        "source": "USER_EXPLICIT"
+      },
+      "field_of_view": {
+        "value": "60",
+        "source": "USER_EXPLICIT"
+      },
+      "aspect_ratio": {
+        "value": "1.5",
+        "source": "USER_EXPLICIT"
+      },
+      "locked": {
+        "value": true,
+        "source": "USER_EXPLICIT"
+      }
+    }
+  ],
+  "output_intents": [
+    {
+      "id": "a2da2038-5749-5188-aa7f-624f3c31a6a9",
+      "output_type": {
+        "value": "render",
+        "source": "USER_EXPLICIT"
+      },
+      "camera_id": {
+        "value": "7a99ed7e-77a7-5629-bdff-8ef4e1446ab4",
+        "source": "USER_EXPLICIT"
+      }
+    }
+  ],
+  "constraints": [
+    {
+      "id": "918c8557-fce9-5ed7-bb14-275eec076815",
+      "kind": "locked_camera",
+      "target_id": {
+        "value": "7a99ed7e-77a7-5629-bdff-8ef4e1446ab4",
+        "source": "USER_EXPLICIT"
+      }
+    },
+    {
+      "id": "71672f6e-78c9-54a9-8ded-c19237a856ac",
+      "kind": "must_touch_wall",
+      "wall_ids": {
+        "value": [
+          "939dc3de-96f0-57ef-b738-3946f812fba3",
+          "9daaa49a-ece1-58f6-844e-d2d5947a2c79"
+        ],
+        "source": "USER_EXPLICIT"
+      },
+      "object_type": {
+        "value": "cabinetry",
+        "source": "USER_EXPLICIT"
+      }
+    },
+    {
+      "id": "66aacc38-e898-54f2-9e95-64739da6238e",
+      "kind": "cannot_touch_wall",
+      "wall_ids": {
+        "value": [
+          "aa396b42-e0e5-5c7a-becc-341616a6aadb",
+          "880ee7ae-d957-531a-bc72-c09ab83cc281"
+        ],
+        "source": "USER_EXPLICIT"
+      },
+      "object_type": {
+        "value": "cabinetry",
+        "source": "USER_EXPLICIT"
+      }
+    }
+  ],
+  "openings": [
+    {
+      "id": "43293b2b-cdc6-5224-a220-b7aa9f39dc1a",
+      "opening_type": {
+        "value": "window",
+        "source": "USER_EXPLICIT"
+      },
+      "host_wall_id": {
+        "value": "aa396b42-e0e5-5c7a-becc-341616a6aadb",
+        "source": "USER_EXPLICIT"
+      },
+      "position": {
+        "value": "900",
+        "source": "USER_EXPLICIT"
+      },
+      "width": {
+        "value": "1200",
+        "source": "USER_EXPLICIT"
+      },
+      "height": {
+        "value": "1100",
+        "source": "USER_EXPLICIT"
+      },
+      "sill_height": {
+        "value": "1000",
+        "source": "USER_EXPLICIT"
+      }
+    },
+    {
+      "id": "7e01cfba-7e28-5211-bc7d-e50a7ecf11d4",
+      "opening_type": {
+        "value": "opening",
+        "source": "USER_EXPLICIT"
+      },
+      "host_wall_id": {
+        "value": "880ee7ae-d957-531a-bc72-c09ab83cc281",
+        "source": "USER_EXPLICIT"
+      },
+      "position": {
+        "value": "850",
+        "source": "USER_EXPLICIT"
+      },
+      "width": {
+        "value": "1730",
+        "source": "USER_EXPLICIT"
+      },
+      "height": {
+        "value": "2100",
+        "source": "USER_EXPLICIT"
+      },
+      "sill_height": {
+        "value": "0",
+        "source": "USER_EXPLICIT"
+      }
+    }
+  ]
+}

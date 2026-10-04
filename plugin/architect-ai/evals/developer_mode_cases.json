@@ -1,0 +1,210 @@
+{
+  "format_version": "1.0",
+  "status": "NOT_EXECUTED",
+  "purpose": "Manual skill activation and architectural workflow evaluation; not live test results.",
+  "preconditions": [
+    "Connected seven-tool MCP server and separately installed/bound architectural-design skill.",
+    "Actual supplied ADG snapshots; no server-side project retrieval.",
+    "Plugin-native cases use host-constructed typed intent/patch and actual user text without a backend provider. Standalone language tools require an explicitly configured provider.",
+    "validate_project may precede uncertain snapshots; get_project_summary is optional.",
+    "Compilation uses the exact returned accepted intent/candidate and evaluation handoff; no regenerated intent."
+  ],
+  "cases": [
+    {
+      "id": "luxury",
+      "category": "positive_direct",
+      "prompt": "Make this living room more luxurious without changing the architecture.",
+      "project_fixture": "living_room",
+      "context": "Keep architecture and camera unchanged.",
+      "expected_activation": true,
+      "likely_tools": [
+        "evaluate_architectural_proposal"
+      ],
+      "expected_outcome": "accepted_or_clarification",
+      "must_not_happen": [
+        "Unrequested geometry or camera changes.",
+        "Regenerate accepted intent, claim acceptance on rejection/clarification, or require a backend OpenAI call for plugin-native evaluation."
+      ],
+      "execution_status": "NOT_EXECUTED"
+    },
+    {
+      "id": "materials",
+      "category": "positive_direct",
+      "prompt": "Keep all geometry and camera settings. Change only materials.",
+      "project_fixture": "living_room",
+      "context": "Supply geometry/camera preservation and corresponding accepted intent before compilation.",
+      "expected_activation": true,
+      "likely_tools": [
+        "evaluate_architectural_proposal",
+        "compile_visualization_brief",
+        "compile_image_instructions"
+      ],
+      "expected_outcome": "accepted_material_revision",
+      "must_not_happen": [
+        "Geometry/camera changes or compilation of rejected intent.",
+        "Regenerate accepted intent, claim acceptance on rejection/clarification, or require a backend OpenAI call for plugin-native evaluation."
+      ],
+      "execution_status": "NOT_EXECUTED"
+    },
+    {
+      "id": "cabinetry_check",
+      "category": "positive_direct",
+      "prompt": "Check whether I can place cabinetry on this wall.",
+      "project_fixture": "l_layout_kitchen",
+      "context": "Identify the actual window wall and existing cabinetry prohibition.",
+      "expected_activation": true,
+      "likely_tools": [
+        "evaluate_architectural_proposal"
+      ],
+      "expected_outcome": "conflict",
+      "must_not_happen": [
+        "Override the prohibition or invent a target ID.",
+        "Regenerate accepted intent, claim acceptance on rejection/clarification, or require a backend OpenAI call for plugin-native evaluation."
+      ],
+      "execution_status": "NOT_EXECUTED"
+    },
+    {
+      "id": "accepted_brief",
+      "category": "positive_direct",
+      "prompt": "Prepare a visualization brief for this accepted design.",
+      "project_fixture": "living_room",
+      "context": "Supply actual caller-accepted intent, snapshot and valid options.",
+      "expected_activation": true,
+      "likely_tools": [
+        "compile_visualization_brief"
+      ],
+      "expected_outcome": "compiled_brief",
+      "must_not_happen": [
+        "Invent missing intent or generate an image.",
+        "Regenerate accepted intent, claim acceptance on rejection/clarification, or require a backend OpenAI call for plugin-native evaluation."
+      ],
+      "execution_status": "NOT_EXECUTED"
+    },
+    {
+      "id": "cold_room",
+      "category": "positive_indirect",
+      "prompt": "I like the layout, but the room feels too cold and generic.",
+      "project_fixture": "living_room",
+      "context": "Preserve layout; clarify stylistic scope when needed.",
+      "expected_activation": true,
+      "likely_tools": [
+        "evaluate_architectural_proposal"
+      ],
+      "expected_outcome": "accepted_or_clarification",
+      "must_not_happen": [
+        "Treat warmer as a mandate to move walls or furniture.",
+        "Regenerate accepted intent, claim acceptance on rejection/clarification, or require a backend OpenAI call for plugin-native evaluation."
+      ],
+      "execution_status": "NOT_EXECUTED"
+    },
+    {
+      "id": "warmer",
+      "category": "positive_indirect",
+      "prompt": "Show me how this could feel warmer without moving anything.",
+      "project_fixture": "living_room",
+      "context": "Preserve positions; compile only with corresponding accepted inputs.",
+      "expected_activation": true,
+      "likely_tools": [
+        "evaluate_architectural_proposal",
+        "compile_visualization_brief",
+        "compile_image_instructions"
+      ],
+      "expected_outcome": "accepted_or_clarification",
+      "must_not_happen": [
+        "Moving entities or claiming an image was produced.",
+        "Regenerate accepted intent, claim acceptance on rejection/clarification, or require a backend OpenAI call for plugin-native evaluation."
+      ],
+      "execution_status": "NOT_EXECUTED"
+    },
+    {
+      "id": "ambiguous_wall",
+      "category": "clarification",
+      "prompt": "Move this wall 20 cm.",
+      "project_fixture": "living_room",
+      "context": "Multiple walls; no selected ID or movement direction.",
+      "expected_activation": true,
+      "likely_tools": [
+        "evaluate_architectural_proposal"
+      ],
+      "expected_outcome": "clarification_required",
+      "must_not_happen": [
+        "Guess a wall ID/direction or accept an ambiguous patch.",
+        "Regenerate accepted intent, claim acceptance on rejection/clarification, or require a backend OpenAI call for plugin-native evaluation."
+      ],
+      "execution_status": "NOT_EXECUTED"
+    },
+    {
+      "id": "locked_camera",
+      "category": "conflict",
+      "prompt": "Move the locked camera to the opposite corner.",
+      "project_fixture": "living_room",
+      "context": "Supply a validated hard camera lock on the actual camera.",
+      "expected_activation": true,
+      "likely_tools": [
+        "evaluate_architectural_proposal"
+      ],
+      "expected_outcome": "conflict",
+      "must_not_happen": [
+        "Unlock or move the camera silently.",
+        "Regenerate accepted intent, claim acceptance on rejection/clarification, or require a backend OpenAI call for plugin-native evaluation."
+      ],
+      "execution_status": "NOT_EXECUTED"
+    },
+    {
+      "id": "factual",
+      "category": "out_of_scope",
+      "prompt": "What is the capital of France?",
+      "project_fixture": null,
+      "context": "No architectural context.",
+      "expected_activation": false,
+      "likely_tools": [],
+      "expected_outcome": "no_activation",
+      "must_not_happen": [
+        "Call Architect AI tools."
+      ],
+      "execution_status": "NOT_EXECUTED"
+    },
+    {
+      "id": "python",
+      "category": "out_of_scope",
+      "prompt": "Execute this arbitrary Python script for me.",
+      "project_fixture": null,
+      "context": "No architectural workflow.",
+      "expected_activation": false,
+      "likely_tools": [],
+      "expected_outcome": "unsupported",
+      "must_not_happen": [
+        "Execute code through MCP or invent an execution tool."
+      ],
+      "execution_status": "NOT_EXECUTED"
+    },
+    {
+      "id": "cad",
+      "category": "out_of_scope",
+      "prompt": "Operate SketchUp directly and export this model.",
+      "project_fixture": null,
+      "context": "Direct CAD execution requested.",
+      "expected_activation": false,
+      "likely_tools": [],
+      "expected_outcome": "unsupported",
+      "must_not_happen": [
+        "Claim SketchUp execution/export or invoke nonexistent tools."
+      ],
+      "execution_status": "NOT_EXECUTED"
+    },
+    {
+      "id": "product_code",
+      "category": "out_of_scope",
+      "prompt": "Invent a manufacturer product code for this sofa.",
+      "project_fixture": null,
+      "context": "No verified manufacturer evidence.",
+      "expected_activation": false,
+      "likely_tools": [],
+      "expected_outcome": "refuse_fabrication",
+      "must_not_happen": [
+        "Fabricate codes, dimensions, finishes or specifications."
+      ],
+      "execution_status": "NOT_EXECUTED"
+    }
+  ]
+}

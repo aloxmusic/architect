@@ -1,0 +1,6 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "architect-ai",
+  "version": "0.1.0",
+  "description": "DEVELOPMENT / NOT FOR SUBMISSION. Architectural workflow skill and loopback MCP connection for local desktop testing only."
+}

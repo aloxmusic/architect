@@ -1,0 +1,404 @@
+{
+  "id": "79679736-6254-59b5-a799-5b922e2aacd7",
+  "name": {
+    "value": "Commercial Bar",
+    "source": "USER_EXPLICIT"
+  },
+  "project_type": {
+    "value": "commercial",
+    "source": "USER_EXPLICIT"
+  },
+  "units": "mm",
+  "locale": {
+    "value": "en-GB",
+    "source": "USER_EXPLICIT"
+  },
+  "status": {
+    "value": "draft",
+    "source": "USER_EXPLICIT"
+  },
+  "schema_version": "1.0.0",
+  "spaces": [
+    {
+      "id": "2f682bda-c8c6-5050-8542-1ec273db364c",
+      "space_type": {
+        "value": "bar",
+        "source": "USER_EXPLICIT"
+      },
+      "dimensions": {
+        "value": {
+          "width": "12000",
+          "depth": "8000",
+          "height": "2800"
+        },
+        "source": "USER_EXPLICIT"
+      },
+      "floor_elevation": {
+        "value": "0",
+        "source": "USER_EXPLICIT"
+      },
+      "ceiling_height": {
+        "value": "2800",
+        "source": "USER_EXPLICIT"
+      },
+      "boundary": {
+        "value": {
+          "vertices": [
+            {
+              "x": "0",
+              "y": "0"
+            },
+            {
+              "x": "12000",
+              "y": "0"
+            },
+            {
+              "x": "12000",
+              "y": "8000"
+            },
+            {
+              "x": "0",
+              "y": "8000"
+            }
+          ]
+        },
+        "source": "USER_EXPLICIT"
+      }
+    }
+  ],
+  "walls": [
+    {
+      "id": "75b02120-a9e6-50a5-9373-36c4e1004224",
+      "start": {
+        "value": {
+          "x": "0",
+          "y": "0",
+          "z": "0"
+        },
+        "source": "USER_EXPLICIT"
+      },
+      "end": {
+        "value": {
+          "x": "12000",
+          "y": "0",
+          "z": "0"
+        },
+        "source": "USER_EXPLICIT"
+      },
+      "thickness": {
+        "value": "150",
+        "source": "USER_EXPLICIT"
+      },
+      "height": {
+        "value": "2800",
+        "source": "USER_EXPLICIT"
+      },
+      "wall_type": {
+        "value": "partition",
+        "source": "USER_EXPLICIT"
+      }
+    },
+    {
+      "id": "4e91e319-7c4d-51d9-b9c2-de9ce3efa19e",
+      "start": {
+        "value": {
+          "x": "12000",
+          "y": "0",
+          "z": "0"
+        },
+        "source": "USER_EXPLICIT"
+      },
+      "end": {
+        "value": {
+          "x": "12000",
+          "y": "8000",
+          "z": "0"
+        },
+        "source": "USER_EXPLICIT"
+      },
+      "thickness": {
+        "value": "150",
+        "source": "USER_EXPLICIT"
+      },
+      "height": {
+        "value": "2800",
+        "source": "USER_EXPLICIT"
+      },
+      "wall_type": {
+        "value": "partition",
+        "source": "USER_EXPLICIT"
+      }
+    },
+    {
+      "id": "c97d0d8c-ff6f-50b9-a077-5576019b1d54",
+      "start": {
+        "value": {
+          "x": "12000",
+          "y": "8000",
+          "z": "0"
+        },
+        "source": "USER_EXPLICIT"
+      },
+      "end": {
+        "value": {
+          "x": "0",
+          "y": "8000",
+          "z": "0"
+        },
+        "source": "USER_EXPLICIT"
+      },
+      "thickness": {
+        "value": "150",
+        "source": "USER_EXPLICIT"
+      },
+      "height": {
+        "value": "2800",
+        "source": "USER_EXPLICIT"
+      },
+      "wall_type": {
+        "value": "partition",
+        "source": "USER_EXPLICIT"
+      }
+    },
+    {
+      "id": "33698cab-6110-5447-8cf9-10cafdf0f803",
+      "start": {
+        "value": {
+          "x": "0",
+          "y": "8000",
+          "z": "0"
+        },
+        "source": "USER_EXPLICIT"
+      },
+      "end": {
+        "value": {
+          "x": "0",
+          "y": "0",
+          "z": "0"
+        },
+        "source": "USER_EXPLICIT"
+      },
+      "thickness": {
+        "value": "150",
+        "source": "USER_EXPLICIT"
+      },
+      "height": {
+        "value": "2800",
+        "source": "USER_EXPLICIT"
+      },
+      "wall_type": {
+        "value": "partition",
+        "source": "USER_EXPLICIT"
+      }
+    }
+  ],
+  "furniture": [
+    {
+      "id": "c86c68cf-66f3-511a-9cbe-8c783aa95d07",
+      "object_type": {
+        "value": "bar_counter",
+        "source": "USER_EXPLICIT"
+      },
+      "dimensions": {
+        "value": {
+          "width": "600",
+          "depth": "600",
+          "height": "900"
+        },
+        "source": "USER_EXPLICIT"
+      },
+      "position": {
+        "value": {
+          "x": "300",
+          "y": "300",
+          "z": "0"
+        },
+        "source": "USER_EXPLICIT"
+      },
+      "rotation": {
+        "value": "0",
+        "source": "USER_EXPLICIT"
+      },
+      "clearance_requirements": {
+        "value": {
+          "front": "900",
+          "back": "0",
+          "left": "0",
+          "right": "0",
+          "above": "0"
+        },
+        "source": "USER_EXPLICIT"
+      },
+      "fixed_or_movable": {
+        "value": "movable",
+        "source": "USER_EXPLICIT"
+      }
+    }
+  ],
+  "fixed_elements": [
+    {
+      "id": "752a1f81-5d07-5da0-b7d9-34f1d4d69e87",
+      "element_type": {
+        "value": "structural_column",
+        "source": "USER_EXPLICIT"
+      },
+      "dimensions": {
+        "value": {
+          "width": "200",
+          "depth": "200",
+          "height": "2800"
+        },
+        "source": "USER_EXPLICIT"
+      },
+      "position": {
+        "value": {
+          "x": "11800",
+          "y": "7800",
+          "z": "0"
+        },
+        "source": "USER_EXPLICIT"
+      },
+      "rotation": {
+        "value": "0",
+        "source": "USER_EXPLICIT"
+      }
+    }
+  ],
+  "styles": [
+    {
+      "id": "80ba8383-c0bc-5461-b25b-e2b031d73ba9",
+      "primary_style": {
+        "value": "minimal",
+        "source": "AI_INFERRED"
+      },
+      "secondary_influences": {
+        "value": [],
+        "source": "USER_EXPLICIT"
+      },
+      "palette": {
+        "value": [
+          "warm white"
+        ],
+        "source": "USER_EXPLICIT"
+      },
+      "material_characteristics": {
+        "value": [
+          "matte"
+        ],
+        "source": "USER_EXPLICIT"
+      },
+      "mood": {
+        "value": "calm",
+        "source": "USER_EXPLICIT"
+      },
+      "design_intensity": {
+        "value": "0.5",
+        "source": "USER_EXPLICIT"
+      },
+      "prohibited_characteristics": {
+        "value": [
+          "glossy"
+        ],
+        "source": "USER_EXPLICIT"
+      }
+    }
+  ],
+  "materials": [
+    {
+      "id": "cdd7137c-0839-5beb-8dc6-ff8d246419d8",
+      "generic_material": {
+        "value": "oak",
+        "source": "USER_EXPLICIT"
+      },
+      "verification_status": {
+        "value": "unverified",
+        "source": "USER_EXPLICIT"
+      }
+    }
+  ],
+  "lighting": [
+    {
+      "id": "f243ae6e-d5c1-5ecf-a02e-c445e10f8093",
+      "fixture_intent": {
+        "value": "indirect",
+        "source": "USER_EXPLICIT"
+      },
+      "color_temperature": {
+        "value": "3000",
+        "source": "USER_EXPLICIT"
+      },
+      "daylight_intent": {
+        "value": "preserve window daylight",
+        "source": "USER_EXPLICIT"
+      },
+      "artificial_lighting_intent": {
+        "value": "task and ambient",
+        "source": "USER_EXPLICIT"
+      },
+      "lighting_mood": {
+        "value": "warm",
+        "source": "USER_EXPLICIT"
+      }
+    }
+  ],
+  "cameras": [
+    {
+      "id": "366ca8fa-1b00-5b54-97a9-00c5985b6797",
+      "position": {
+        "value": {
+          "x": "6000",
+          "y": "7900",
+          "z": "1600"
+        },
+        "source": "USER_EXPLICIT"
+      },
+      "target": {
+        "value": {
+          "x": "0",
+          "y": "0",
+          "z": "1000"
+        },
+        "source": "USER_EXPLICIT"
+      },
+      "focal_length": {
+        "value": "35",
+        "source": "USER_EXPLICIT"
+      },
+      "field_of_view": {
+        "value": "60",
+        "source": "USER_EXPLICIT"
+      },
+      "aspect_ratio": {
+        "value": "1.5",
+        "source": "USER_EXPLICIT"
+      },
+      "locked": {
+        "value": true,
+        "source": "USER_EXPLICIT"
+      }
+    }
+  ],
+  "output_intents": [
+    {
+      "id": "85134481-9db3-5580-b65e-c902390eac21",
+      "output_type": {
+        "value": "render",
+        "source": "USER_EXPLICIT"
+      },
+      "camera_id": {
+        "value": "366ca8fa-1b00-5b54-97a9-00c5985b6797",
+        "source": "USER_EXPLICIT"
+      }
+    }
+  ],
+  "constraints": [
+    {
+      "id": "27231a5f-30c6-597e-ae8a-f044f30bb357",
+      "kind": "locked_camera",
+      "target_id": {
+        "value": "366ca8fa-1b00-5b54-97a9-00c5985b6797",
+        "source": "USER_EXPLICIT"
+      }
+    }
+  ]
+}
