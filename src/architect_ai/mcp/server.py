@@ -225,7 +225,9 @@ def tool_bindings(tools: ArchitecturalTools) -> tuple[ToolBinding, ...]:
             "interpret_architectural_request",
             "Interpret architectural request",
             "Interpret language against the supplied project into a proposal; never apply changes. "
-            "Uses only the configured interpreter; may send bounded context to enabled OpenAI.",
+            "Requires an explicitly requested, enabled server-side interpreter. "
+            "ChatGPT/Codex should interpret in the host by default and ask about ambiguous targets "
+            "without calling this tool. May send bounded context to enabled OpenAI.",
             InterpretationRequest,
             ToolResponse[InterpretationData],
             tools.interpret_architectural_request,
@@ -235,6 +237,9 @@ def tool_bindings(tools: ArchitecturalTools) -> tuple[ToolBinding, ...]:
             "Evaluate architectural request",
             "Interpret then evaluate through the existing deterministic patch/conflict engine. "
             "Return an accepted candidate only on acceptance; never persist or confirm removals. "
+            "Requires an explicitly requested, enabled server-side interpreter; not the default "
+            "ChatGPT/Codex route. Ask about ambiguous targets directly; use "
+            "evaluate_architectural_proposal for host-constructed intent/patch. "
             "May send bounded context to the configured OpenAI interpreter when enabled.",
             InterpretationRequest,
             ToolResponse[EvaluationData],

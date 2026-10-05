@@ -16,6 +16,26 @@ generates images, operates CAD software, or verifies catalogue information.
 
 ## Choose the smallest appropriate workflow
 
+### Resolve targets before selecting an interpretation tool
+
+In ChatGPT/Codex, interpret the supplied request in the host by default. Do not
+call `interpret_architectural_request` or `evaluate_architectural_request` merely
+because the user wrote natural language. Those tools require an explicitly
+requested and configured server-side interpreter. An available tool name does
+not establish that its interpreter is enabled.
+
+- "Move this wall 20 cm": when multiple walls exist, ask for the wall ID and
+  movement direction (200 mm). Do not select a wall, emit a patch or call an
+  interpretation/evaluation tool before that clarification.
+- "Move the locked camera to the opposite corner": inspect the supplied camera
+  lock and constraints, explain the conflict, and leave them unchanged. Do not
+  guess a corner or unlock the camera. A request to move is not permission to
+  remove its lock. If a concrete rejection test is requested, clarify its target
+  first, then use `evaluate_architectural_proposal` while retaining the locks.
+- If a standalone interpreter reports unavailable, do not ask for an API key or
+  claim clarification depends on that provider. Ask the user directly; use the
+  provider-free proposal evaluator only after a valid, unambiguous proposal exists.
+
 1. Call `validate_project` when project validity is uncertain. Stop on invalid data.
 2. Use `get_project_summary` when a compact account of IDs/protections is useful.
 3. Prefer plugin-native interpretation inside ChatGPT/Codex: use the user's actual
