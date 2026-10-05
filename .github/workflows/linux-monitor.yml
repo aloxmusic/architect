@@ -1,4 +1,5 @@
 name: Linux automatic tests
+run-name: Linux ${{ github.event.schedule == '17 * * * *' && 'quick' || inputs.mode || 'full' }} tests
 
 on:
   push:
